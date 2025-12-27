@@ -11,7 +11,7 @@ const StadCard = ({
   icon: LucideIcon;
   value: string;
   label: string;
-  hasBorder:boolean
+  hasBorder?:boolean
 }) => {
   return (
     <div className={cn("space-y-2" ,hasBorder && "border-x border-border/50")}>
