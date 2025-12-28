@@ -9,7 +9,7 @@ const RecentlyLaunched = () => {
     const recentlyLaunchedProducts:any = []
   return (
     <div className="py-20">
-        <div className="wrapper">
+        <div className="wrapper space-y-12">
             <SectionHeader 
             title="Recently Launched"
             description="Discover the latest products from our commuinity"
