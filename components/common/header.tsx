@@ -27,7 +27,7 @@ const Header = () => {
               className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hover:bg-muted/50"
             >
               <HomeIcon className="size-4" />
-{/* update */}
+
               <span>Home</span>
             </Link>
             <Link
