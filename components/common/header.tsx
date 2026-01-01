@@ -1,6 +1,7 @@
 import { HomeIcon, SparkleIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import { Button } from "../ui/button";
 
 const Logo = () => {
   return (
@@ -16,6 +17,7 @@ const Logo = () => {
 };
 
 const Header = () => {
+  const isSignedIn = false;
   return (
     <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="wrapper px-12">
@@ -38,6 +40,19 @@ const Header = () => {
 
               <span>Explore</span>
             </Link>
+
+            <div className="flex items-center gap-3">
+              {isSignedIn ? (
+                <Button asChild>
+                  <Link href={"/submit"}>Submit Work</Link>
+                </Button>
+              ) : (
+                <>
+                  <Button variant="ghost">Sign In</Button>
+                  <Button>Sign Up</Button>
+                </>
+              )}
+            </div>
           </div>
         </div>
       </div>
