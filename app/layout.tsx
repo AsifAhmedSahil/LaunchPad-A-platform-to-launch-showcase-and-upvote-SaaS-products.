@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/common/header";
+import Footer from "@/components/common/footer";
 
 
 const outfit = Outfit({
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

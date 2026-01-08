@@ -23,7 +23,7 @@ const Header = () => {
       <div className="wrapper px-12">
         <div className="h-16 flex items-center justify-between">
           <Logo />
-          <div className="flex items-center gap-1">
+          <nav className="flex items-center gap-1">
             <Link
               href={"/"}
               className="flex items-center gap-2 px-3 py-2 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hover:bg-muted/50"
@@ -40,7 +40,7 @@ const Header = () => {
 
               <span>Explore</span>
             </Link>
-
+ </nav>
             <div className="flex items-center gap-3">
               {isSignedIn ? (
                 <Button asChild>
@@ -53,7 +53,7 @@ const Header = () => {
                 </>
               )}
             </div>
-          </div>
+         
         </div>
       </div>
     </header>
