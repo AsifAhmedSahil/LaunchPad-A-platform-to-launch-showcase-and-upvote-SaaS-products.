@@ -49,7 +49,7 @@ const FeaturedCard = () => {
             icon={StarsIcon}
             description="Top listed product from our community in this week..."
           />
-
+{/* update */}
           <Button asChild variant="outline" className="hidden sm:flex">
             <Link href={"/explore"} >
             View All <ArrowUpRightIcon/>
